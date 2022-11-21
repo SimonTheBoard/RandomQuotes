@@ -73,3 +73,10 @@ steps:
     Space: 'Spaces-1'
     Package: 'RandomQuotes.1.0.$(Build.BuildId).nupkg'
     Replace: 'false'
+
+- task: OctopusCreateRelease@5
+  inputs:
+    OctoConnectedServiceName: 'Octopus'
+    Space: 'Spaces-1'
+    ProjectName: 'Random Quotes'
+    DeployToEnvironment: 'Dev'
