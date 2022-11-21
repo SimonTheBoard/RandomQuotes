@@ -65,5 +65,5 @@ steps:
   inputs:
     PackageId: 'RandomQuotes'
     PackageFormat: 'NuPkg'
-    PackageVersion: '1.0.${Build.BuildId}'
+    PackageVersion: '1.0.$(Build.BuildId)'
     SourcePath: '$(build.artifactstagingdirectory)\RandomQuotes'
